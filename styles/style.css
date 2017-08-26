@@ -247,60 +247,75 @@ body {
   max-width: 1000px;
   margin: 0 auto 40px;
   height: 300px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0 20px; }
   .post-headline .headline-text {
     width: 50%;
     float: left;
     height: 100%;
-    border-bottom: 1px solid #333333;
-    border-right: 1px solid #333333;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+    border-right: 1px solid rgba(51, 51, 51, 0.4);
     padding: 40px 10px 0; }
     .post-headline .headline-text h1 {
       margin-bottom: 40px; }
     .post-headline .headline-text p {
       margin: 0; }
+    .post-headline .headline-text .mobile-caption {
+      display: none; }
   .post-headline .headline-image {
     width: 50%;
     float: left;
     height: 100%;
-    border-top: 1px solid #333333;
-    padding: 20px; }
+    border-top: 1px solid rgba(51, 51, 51, 0.4);
+    padding: 20px 0 0 20px; }
     .post-headline .headline-image .padding-container {
       height: 100%;
       width: 100%;
       overflow: hidden; }
       .post-headline .headline-image .padding-container img {
-        width: 100%; }
+        height: 300px; }
   @media (max-width: 800px) {
     .post-headline {
-      height: auto; }
+      height: auto;
+      padding: 0; }
       .post-headline .headline-text {
         width: 90%;
         float: none;
         height: auto;
         border-right: none;
-        border-left: 1px solid #333333;
-        margin: 0 auto; }
+        border-left: 1px solid rgba(51, 51, 51, 0.4);
+        margin: 0 auto;
+        padding: 0 10px; }
         .post-headline .headline-text h1 {
           margin-bottom: 0; }
+        .post-headline .headline-text .desktop-caption {
+          display: none; }
+        .post-headline .headline-text .mobile-caption {
+          display: block; }
       .post-headline .headline-image {
         width: 90%;
         float: none;
         height: 300px;
         border-top: none;
-        border-right: 1px solid #333333;
-        margin: 0 auto; }
+        border-right: 1px solid rgba(51, 51, 51, 0.4);
+        margin: 0 auto;
+        padding: 20px 20px 0 0; }
         .post-headline .headline-image .padding-container img {
-          height: 100%;
-          width: initial;
+          width: 100%;
+          height: auto;
           margin: 0 auto;
           display: block; } }
+  @media (max-width: 500px) {
+    .post-headline .headline-image .padding-container img {
+      width: auto;
+      height: 300px; } }
 
 .content {
   display: block;
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 20px; }
 
 .ben {
   width: 50%;

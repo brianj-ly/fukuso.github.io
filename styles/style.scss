@@ -195,32 +195,46 @@ body{color:$font-color; background-color: $base-color; font-family:futura;}
 
 //POST HEADLINE
 
-.post-headline{ @include center-content(); margin: 0 auto 40px; height:300px; box-sizing: border-box;
-  .headline-text{width:50%; float:left; height:100%; border-bottom: 1px solid $font-color; border-right: 1px solid $font-color; padding: 40px 10px 0;
+.post-headline{ @include center-content(); margin: 0 auto 40px; height:300px; box-sizing: border-box; padding: 0 20px;
+  .headline-text{width:50%; float:left; height:100%; border-bottom: 1px solid rgba(51,51,51, 0.4); border-right: 1px solid rgba(51,51,51, 0.4); padding: 40px 10px 0;
     h1{margin-bottom: 40px}
     p{margin: 0}
+    .mobile-caption{display: none;}
 
   }
-  .headline-image{width:50%; float:left; height:100%;border-top: 1px solid $font-color; padding: 20px;
+  .headline-image{width:50%; float:left; height:100%;border-top: 1px solid rgba(51,51,51, 0.4); padding: 20px 0 0 20px;
     .padding-container{ height:100%; width: 100%;overflow: hidden;
-      img{width: 100%}
+      img{height: 300px}
     }
   }
 
-  @media(max-width: 800px){height:auto;
-    .headline-text{width:90%;float: none; height:auto;  border-right: none; border-left: 1px solid $font-color;  margin: 0 auto;
+  @media(max-width: 800px){height:auto; padding: 0;
+    .headline-text{width:90%; float: none; height:auto;  border-right: none; border-left: 1px solid rgba(51,51,51, 0.4);  margin: 0 auto; padding: 0 10px;
       h1{margin-bottom: 0}
+      .desktop-caption{display: none;}
+      .mobile-caption{display: block;}
+
+
     }
-    .headline-image{width:90%;float: none; height:300px; border-top: none; border-right: 1px solid $font-color; margin: 0 auto;
+    .headline-image{width:90%;float: none; height:300px; border-top: none; border-right: 1px solid rgba(51,51,51, 0.4); margin: 0 auto; padding: 20px 20px 0 0;
       .padding-container{
-        img{height: 100%; width: initial; margin: 0 auto; display: block;}
+        img{width: 100%; height: auto;margin: 0 auto; display: block;}
       }
     }
   }
 
+  @media(max-width: 500px){
+    .headline-image{
+      .padding-container{
+        img{width:auto; height: 300px}
+      }
+    }
+  }
+
+
 }
 
-.content{ @include center-content(); margin: 0 auto;
+.content{ @include center-content(); margin: 0 auto; padding: 0 20px;
 
 }
 
