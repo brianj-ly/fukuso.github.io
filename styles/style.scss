@@ -1,0 +1,235 @@
+$font-color: rgb(51,51,51);
+$base-color: rgb(245,245,245);
+@font-face {font-family: futura; src:url(../futura.ttf);}
+@font-face {font-family: futura-bold; src:url(../futurabold.ttf);}
+
+
+@mixin center-content() {display: block; width:100%; max-width: 1000px;}
+
+body{color:$font-color; background-color: $base-color; font-family:futura;}
+
+//UNIVERSAL CLASSES/ HOMEPAGE ************************************************************************
+
+
+//NAVIGATION BAR
+
+.navigation{ width:100%; padding: 20px 0; text-align: center;
+  h1{clear: both}
+  .margin{margin-right: 20px;}
+  a{color: rgba(51,51,51,0.6);
+    h1{color:$font-color}
+  };
+
+
+  .links{ display: inline-block ; padding: 10px 40px; float:right;}
+
+  .nav-categories{ display: inline-block; float: left; padding: 10px 40px;}
+
+  .hamburger{ display:none; width:35px; top:32px; right:20px; position: absolute; cursor:pointer;
+    img{width:100%}
+  }
+
+  .title{font-size: 3em;}
+
+  @media(max-width: 600px){
+    .links{display: none;}
+    .nav-categories{display: none;}
+    .hamburger{display: block;}
+
+  }
+
+}
+
+#slideout-menu{z-index: 999; width:100%; height:100vh; background-color: $font-color; position: fixed; top: 0; display:none; color:white;
+
+  .menu-container{ display: inline-block; position: relative; top: 50%; transform: translateY(-50%); float: right;padding-right: 20px;
+    .homelink{text-decoration: underline; font-size: 2.5em;}
+    a{font-size: 2em; width: 100%; display: inherit}
+  }
+  a{cursor:pointer}
+  .close-button{ position: absolute; bottom:20px; right: 20px; font-size: 2em;}
+
+}
+
+
+// HEADLINES
+
+.headlines{@include center-content();  margin: 0 auto;
+
+    .primary-headline{overflow:hidden; max-height:400px; margin-bottom: 10px;position: relative;
+      img{width: 100%;}
+      //If background image is too white, turn background color alpha value up
+      .captions{position: absolute; bottom:0; left: 0; color:white; background-color: rgba(0,0,0,0.4); padding:10px;
+      }
+      a{width: 100%;height:100%; display: block; position: absolute;}
+    }
+
+    .secondary-headline-container{ height:200px; overflow: hidden; display:flex;
+
+      .middle-headline{ margin: 0 10px};
+      .secondary-headline{ position: relative; width: 32.65%; float: left; height: 100%;
+        .captions{ position: absolute; bottom:0; left: 0; color:white; z-index:999; padding: 5px}
+        img{width: 100%};
+        a{width: 100%;height:100%; display: block; position: absolute;}
+
+      }
+
+    }
+
+    @media(max-width: 600px){
+
+      .primary-headline{
+        .captions{
+          h1{font-size: 1.5em;}
+          h3{font-size: 1em;}
+        }
+      }
+
+      .secondary-headline-container{display: none;}
+    }
+
+}
+
+//CATEGORIES
+
+.categories{@include center-content(); margin: 0 auto; height:100px; padding-top: 35px; border-bottom: 1px solid $font-color;
+  a{float:left; font-size:1.5em; color: $font-color; margin-right: 10px;}
+  p{float: left; margin-right: 7px; padding-top: 5px;}
+}
+
+//MOBILE CATEGORIES
+
+.mobile-categories{display: none; width:100%; height:100px; padding-top: 35px; border-bottom: 1px solid $font-color;
+  a{float:left; font-size:1.5em; color: $font-color; margin-right: 10px;}
+  p{float: left; margin-right: 7px; padding-top: 5px;}
+}
+
+@media(max-width: 720px){
+  .categories{display:none};
+  .mobile-categories{display:block};
+
+}
+
+
+
+//HOMEPAGE ARTICLES
+
+.articles{ @include center-content(); margin: 20px auto;
+  .article{height:200px; overflow: hidden; margin-bottom: 20px;
+    img{width: 100%}
+  }
+
+  @media(max-width: 768px){padding: 0 15px;
+    .article{height: auto;
+      .image-container{height:200px; overflow: hidden;}
+    }
+
+  }
+
+}
+
+
+//FOOTER
+
+.footer{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #EBEBEB;
+  margin-top: 250px;
+
+  .footer-container {
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto;
+  width: 40%;
+    }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #4E4E4E;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  h2 {
+    font-size: 1em;
+    color: #333333;
+    font-weight: bold;
+  }
+  p {
+    text-align: left;
+    padding-top: 13px;
+  }
+  .email {
+    background-color: white;
+    border-color: #979797;
+    border-style: solid;
+    border-width: 0.5px;
+    height: 40px;
+    width: 275px;
+    font-weight: lighter;
+    outline: none;
+    padding-left: 10px;
+  }
+  .submit-button {
+    height: 40px;
+    background-color: #79848D;
+    color: white;
+    border: none;
+    font-weight: lighter;
+    width: 90px;
+    outline: none;
+  }
+  form {
+    padding: 15px;
+  }
+  img {
+    margin-top: 15px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+}
+
+
+//POSTS ************************************************************************
+
+//POST HEADLINE
+
+.post-headline{ @include center-content(); margin: 0 auto 40px; height:300px; box-sizing: border-box;
+  .headline-text{width:50%; float:left; height:100%; border-bottom: 1px solid $font-color; border-right: 1px solid $font-color; padding: 40px 10px 0;
+    h1{margin-bottom: 40px}
+    p{margin: 0}
+
+  }
+  .headline-image{width:50%; float:left; height:100%;border-top: 1px solid $font-color; padding: 20px;
+    .padding-container{ height:100%; width: 100%;overflow: hidden;
+      img{width: 100%}
+    }
+  }
+
+  @media(max-width: 800px){height:auto;
+    .headline-text{width:90%;float: none; height:auto;  border-right: none; border-left: 1px solid $font-color;  margin: 0 auto;
+      h1{margin-bottom: 0}
+    }
+    .headline-image{width:90%;float: none; height:300px; border-top: none; border-right: 1px solid $font-color; margin: 0 auto;
+      .padding-container{
+        img{height: 100%; width: initial; margin: 0 auto; display: block;}
+      }
+    }
+  }
+
+}
+
+.content{ @include center-content(); margin: 0 auto;
+
+}
+
+// ABOUT PAGE ************************************************************************
+
+.ben{width:50%; float:left; padding: 0 40px;}
+.brian{width: 50%; float:left; padding: 0 40px;}
+.bio-container{display: block; text-align: center;
+  img{ width:150px; height:150px; border-radius: 50%;margin: 0 auto; display: block}
+}
