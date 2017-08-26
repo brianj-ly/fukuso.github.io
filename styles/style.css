@@ -201,18 +201,18 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #EBEBEB;
-  margin-top: 250px; }
+  margin-top: 25px;
+  padding: 40px 0; }
   .footer .footer-container {
     text-align: center;
-    padding: 40px;
     margin: 0 auto;
-    width: 40%; }
+    width: 370px; }
   .footer h3 {
     font-size: 1.5em;
     font-weight: 300;
     color: #4E4E4E;
     margin: 0 auto;
-    padding-bottom: 15px; }
+    display: inline-block; }
   .footer h2 {
     font-size: 1em;
     color: #333333;
@@ -222,13 +222,10 @@ body {
     padding-top: 13px; }
   .footer .email {
     background-color: white;
-    border-color: #979797;
-    border-style: solid;
-    border-width: 0.5px;
+    border: #979797 solid 0.5px;
     height: 40px;
     width: 275px;
     font-weight: lighter;
-    outline: none;
     padding-left: 10px; }
   .footer .submit-button {
     height: 40px;
@@ -236,10 +233,9 @@ body {
     color: white;
     border: none;
     font-weight: lighter;
-    width: 90px;
-    outline: none; }
+    width: 90px; }
   .footer form {
-    padding: 15px; }
+    padding: 15px 0; }
   .footer img {
     margin-top: 15px; }
   .footer a {
