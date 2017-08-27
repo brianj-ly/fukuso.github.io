@@ -52,7 +52,7 @@ body {
 #slideout-menu {
   z-index: 999;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #333333;
   position: fixed;
   top: 0;
