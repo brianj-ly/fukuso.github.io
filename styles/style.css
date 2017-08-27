@@ -344,4 +344,15 @@ body {
       margin: 0 auto;
       display: block; }
 
+.instagram-container {
+  height: 600px;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .instagram-container .instagram {
+    width: 50%;
+    float: left;
+    padding: 30px; }
+    .instagram-container .instagram h1 {
+      text-align: center; }
+
 /*# sourceMappingURL=style.css.map */

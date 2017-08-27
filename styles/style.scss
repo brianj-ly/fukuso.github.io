@@ -252,3 +252,12 @@ body{color:$font-color; background-color: $base-color; font-family:futura;}
     img{ width:150px; height:150px; border-radius: 50%;margin: 0 auto; display: block}
   }
 }
+
+// INSTAGRAM ************************************************************************
+
+.instagram-container{ height:600px; max-width: 1000px; margin: 0 auto;
+  .instagram{width:50%; float:left; padding: 30px;
+    h1{text-align: center;}
+  }
+
+}
