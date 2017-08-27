@@ -39,7 +39,8 @@ body {
     .navigation .hamburger img {
       width: 100%; }
   .navigation .title {
-    font-size: 3em; }
+    font-size: 3em;
+    display: inline-block; }
   @media (max-width: 600px) {
     .navigation .links {
       display: none; }
@@ -56,7 +57,8 @@ body {
   position: fixed;
   top: 0;
   display: none;
-  color: white; }
+  color: white;
+  overflow: hidden; }
   #slideout-menu .menu-container {
     display: inline-block;
     position: relative;

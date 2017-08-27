@@ -17,7 +17,7 @@ body{color:$font-color; background-color: $base-color; font-family:futura;}
   h1{clear: both}
   .margin{margin-right: 20px;}
   a{color: rgba(51,51,51,0.6);
-    h1{color:$font-color}
+    h1{color:$font-color;}
   };
 
 
@@ -29,7 +29,7 @@ body{color:$font-color; background-color: $base-color; font-family:futura;}
     img{width:100%}
   }
 
-  .title{font-size: 3em;}
+  .title{font-size: 3em; display:inline-block;}
 
   @media(max-width: 600px){
     .links{display: none;}
@@ -40,7 +40,7 @@ body{color:$font-color; background-color: $base-color; font-family:futura;}
 
 }
 
-#slideout-menu{z-index: 999; width:100%; height:100vh; background-color: $font-color; position: fixed; top: 0; display:none; color:white;
+#slideout-menu{z-index: 999; width:100%; height:100vh; background-color: $font-color; position: fixed; top: 0; display:none; color:white; overflow: hidden;
 
   .menu-container{ display: inline-block; position: relative; top: 50%; transform: translateY(-50%); float: right;padding-right: 20px;
     .homelink{text-decoration: underline; font-size: 2.5em;}
