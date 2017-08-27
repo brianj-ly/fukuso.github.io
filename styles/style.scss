@@ -244,9 +244,11 @@ body{color:$font-color; background-color: $base-color; font-family:futura;}
 }
 
 // ABOUT PAGE ************************************************************************
-
-.ben{width:50%; float:left; padding: 0 40px;}
-.brian{width: 50%; float:left; padding: 0 40px;}
-.bio-container{display: block; text-align: center;
-  img{ width:150px; height:150px; border-radius: 50%;margin: 0 auto; display: block}
+.about-container{width:100%;overflow: hidden; max-width: 1000px; margin: 0 auto;
+  h4{padding: 0 40px;}
+  .ben{width:50%; float:left; padding: 0 40px;}
+  .brian{width: 50%; float:left; padding: 0 40px;}
+  .bio-container{display: block; text-align: center;
+    img{ width:150px; height:150px; border-radius: 50%;margin: 0 auto; display: block}
+  }
 }
