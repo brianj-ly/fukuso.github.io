@@ -326,11 +326,7 @@ body {
   margin: 0 auto; }
   .about-container h4 {
     padding: 0 40px; }
-  .about-container .ben {
-    width: 50%;
-    float: left;
-    padding: 0 40px; }
-  .about-container .brian {
+  .about-container .bio {
     width: 50%;
     float: left;
     padding: 0 40px; }
@@ -343,6 +339,9 @@ body {
       border-radius: 50%;
       margin: 0 auto;
       display: block; }
+  @media (max-width: 700px) {
+    .about-container .bio {
+      width: 100%; } }
 
 .instagram-container {
   height: 600px;
@@ -354,5 +353,8 @@ body {
     padding: 30px; }
     .instagram-container .instagram h1 {
       text-align: center; }
+  @media (max-width: 700px) {
+    .instagram-container .instagram {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
