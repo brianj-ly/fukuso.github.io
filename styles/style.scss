@@ -20,20 +20,25 @@ body{color:$font-color; background-color: $base-color; font-family:futura;}
     h1{color:$font-color;}
   };
 
+  .navigation-container{ height:50px;
+    .links{ display: inline-block ; padding: 10px 40px; float:right;}
+    .nav-categories{ display: inline-block; float: left; padding: 10px 40px;}
+  }
 
-  .links{ display: inline-block ; padding: 10px 40px; float:right;}
+  .title{font-size: 3em; display:inline-block;
 
-  .nav-categories{ display: inline-block; float: left; padding: 10px 40px;}
+  }
 
   .hamburger{ display:none; width:35px; top:32px; right:20px; position: absolute; cursor:pointer;
     img{width:100%}
   }
 
-  .title{font-size: 3em; display:inline-block;}
+
+
 
   @media(max-width: 600px){
-    .links{display: none;}
-    .nav-categories{display: none;}
+    .navigation-container{display: none;}
+
     .hamburger{display: block;}
 
   }

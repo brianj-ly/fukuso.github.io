@@ -21,14 +21,19 @@ body {
     color: rgba(51, 51, 51, 0.6); }
     .navigation a h1 {
       color: #333333; }
-  .navigation .links {
-    display: inline-block;
-    padding: 10px 40px;
-    float: right; }
-  .navigation .nav-categories {
-    display: inline-block;
-    float: left;
-    padding: 10px 40px; }
+  .navigation .navigation-container {
+    height: 50px; }
+    .navigation .navigation-container .links {
+      display: inline-block;
+      padding: 10px 40px;
+      float: right; }
+    .navigation .navigation-container .nav-categories {
+      display: inline-block;
+      float: left;
+      padding: 10px 40px; }
+  .navigation .title {
+    font-size: 3em;
+    display: inline-block; }
   .navigation .hamburger {
     display: none;
     width: 35px;
@@ -38,13 +43,8 @@ body {
     cursor: pointer; }
     .navigation .hamburger img {
       width: 100%; }
-  .navigation .title {
-    font-size: 3em;
-    display: inline-block; }
   @media (max-width: 600px) {
-    .navigation .links {
-      display: none; }
-    .navigation .nav-categories {
+    .navigation .navigation-container {
       display: none; }
     .navigation .hamburger {
       display: block; } }
