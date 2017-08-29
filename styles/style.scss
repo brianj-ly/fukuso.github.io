@@ -1,6 +1,7 @@
 $font-color: rgb(51,51,51);
 $base-color: rgb(245,245,245);
-@font-face {font-family: futura; src:url(../FuturaBook.ttf);}
+@font-face {font-family: futura; src:url(../FuturaBook.ttf)};
+@font-face {font-family: futurabold; src:url(../FuturaBold.ttf)};
 
 
 @mixin center-content() {display: block; width:100%; max-width: 1000px;}
@@ -239,7 +240,7 @@ body{color:$font-color; background-color: $base-color; font-family: 'futura';}
 }
 
 .content{ @include center-content(); margin: 0 auto; padding: 0 20px;
-
+  p{font-size: 1.2em}
 }
 
 // ABOUT PAGE ************************************************************************

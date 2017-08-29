@@ -1,6 +1,9 @@
 @font-face {
   font-family: futura;
   src: url(../FuturaBook.ttf); }
+@font-face {
+  font-family: futurabold;
+  src: url(../FuturaBold.ttf); }
 body {
   color: #333333;
   background-color: whitesmoke;
@@ -315,6 +318,8 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px; }
+  .content p {
+    font-size: 1.2em; }
 
 .about-container {
   width: 100%;
