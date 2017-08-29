@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+@font-face {
+  font-family: futura;
+  src: url(../FuturaBook.ttf); }
 body {
   color: #333333;
   background-color: whitesmoke;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'futura'; }
 
 .navigation {
   width: 100%;
