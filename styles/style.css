@@ -1,13 +1,8 @@
-@font-face {
-  font-family: futura;
-  src: url(../futura.ttf); }
-@font-face {
-  font-family: futura-bold;
-  src: url(../futurabold.ttf); }
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 body {
   color: #333333;
   background-color: whitesmoke;
-  font-family: futura; }
+  font-family: 'Nunito', sans-serif; }
 
 .navigation {
   width: 100%;

@@ -1,12 +1,11 @@
 $font-color: rgb(51,51,51);
 $base-color: rgb(245,245,245);
-@font-face {font-family: futura; src:url(../futura.ttf);}
-@font-face {font-family: futura-bold; src:url(../futurabold.ttf);}
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 
 @mixin center-content() {display: block; width:100%; max-width: 1000px;}
 
-body{color:$font-color; background-color: $base-color; font-family:futura;}
+body{color:$font-color; background-color: $base-color; font-family: 'Nunito', sans-serif;}
 
 //UNIVERSAL CLASSES/ HOMEPAGE ************************************************************************
 
