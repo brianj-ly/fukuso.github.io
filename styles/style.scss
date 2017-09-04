@@ -1,7 +1,7 @@
 $font-color: rgb(51,51,51);
 $base-color: rgb(245,245,245);
-@font-face {font-family: futura; src:url(../FuturaBook.ttf)};
-@font-face {font-family: futurabold; src:url(../FuturaBold.ttf)};
+@font-face {font-family: futura; src:url(FuturaBook.ttf)};
+@font-face {font-family: futurabold; src:url(FuturaBold.ttf)};
 
 
 @mixin center-content() {display: block; width:100%; max-width: 1000px;}
@@ -247,8 +247,11 @@ body{color:$font-color; background-color: $base-color; font-family: 'futura';}
 .about-container{width:100%;overflow: hidden; max-width: 1000px; margin: 0 auto;
   h4{padding: 0 40px;}
   .bio{width:50%; float:left; padding: 0 40px;}
-  .bio-container{display: block; text-align: center;
+  .bio-container{display: block;
     img{ width:150px; height:150px; border-radius: 50%;margin: 0 auto; display: block}
+    h1{text-align: center;}
+    p{text-align: justify;}
+
   }
 
   @media(max-width: 700px){
@@ -256,8 +259,9 @@ body{color:$font-color; background-color: $base-color; font-family: 'futura';}
   }
 }
 
-// INSTAGRAM ************************************************************************
+// CONTACT ************************************************************************
 
+.email{text-align: center;}
 .instagram-container{ height:600px; max-width: 1000px; margin: 0 auto;
   .instagram{width:50%; float:left; padding: 30px;
     h1{text-align: center;}
@@ -265,6 +269,16 @@ body{color:$font-color; background-color: $base-color; font-family: 'futura';}
 
   @media(max-width: 700px){
     .instagram{width: 100%}
+  }
+
+}
+
+// CATEGORY PAGES ************************************************************************
+
+.category-container{  margin: 0 auto; @include center-content(); min-height: 279px; padding: 0 20px;
+  .post{max-width: 700px; width: 100%; margin: 0 auto; text-align: center;
+    a{font-size: 2.2em; color: $font-color}
+    p{color: rgba(51,51,51, 0.6)}
   }
 
 }

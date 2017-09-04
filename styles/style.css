@@ -1,9 +1,9 @@
 @font-face {
   font-family: futura;
-  src: url(../FuturaBook.ttf); }
+  src: url(FuturaBook.ttf); }
 @font-face {
   font-family: futurabold;
-  src: url(../FuturaBold.ttf); }
+  src: url(FuturaBold.ttf); }
 body {
   color: #333333;
   background-color: whitesmoke;
@@ -333,17 +333,23 @@ body {
     float: left;
     padding: 0 40px; }
   .about-container .bio-container {
-    display: block;
-    text-align: center; }
+    display: block; }
     .about-container .bio-container img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       margin: 0 auto;
       display: block; }
+    .about-container .bio-container h1 {
+      text-align: center; }
+    .about-container .bio-container p {
+      text-align: justify; }
   @media (max-width: 700px) {
     .about-container .bio {
       width: 100%; } }
+
+.email {
+  text-align: center; }
 
 .instagram-container {
   height: 600px;
@@ -358,5 +364,23 @@ body {
   @media (max-width: 700px) {
     .instagram-container .instagram {
       width: 100%; } }
+
+.category-container {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 279px;
+  padding: 0 20px; }
+  .category-container .post {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .category-container .post a {
+      font-size: 2.2em;
+      color: #333333; }
+    .category-container .post p {
+      color: rgba(51, 51, 51, 0.6); }
 
 /*# sourceMappingURL=style.css.map */
