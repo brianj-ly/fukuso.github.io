@@ -10,6 +10,14 @@ body{color:$font-color; background-color: $base-color; font-family: 'futura';}
 
 //UNIVERSAL CLASSES/ HOMEPAGE ************************************************************************
 
+.coming-soon{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 //NAVIGATION BAR
 
